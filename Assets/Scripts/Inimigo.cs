@@ -14,7 +14,8 @@ public class Inimigo : MonoBehaviour {
 		agente.SetDestination(posicaoDoFimDoCaminho);
 	}
 
-	public void RecebeDano(int pontosDeDano){
+	public void RecebeDano(int pontosDeDano)
+	{
 		vida -= pontosDeDano;
 		if (vida <= 0) {
 			Destroy (this.gameObject);
