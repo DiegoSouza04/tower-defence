@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Missil : MonoBehaviour {
+public class Missil : MonoBehaviour 
+{
 
 	private float velocidade = 10;
 	private Inimigo alvo;
@@ -13,7 +14,8 @@ public class Missil : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		Anda ();
 		if (alvo != null) {
 			AlteraDirecao ();

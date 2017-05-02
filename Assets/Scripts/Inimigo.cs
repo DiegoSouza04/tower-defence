@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inimigo : MonoBehaviour {
+public class Inimigo : MonoBehaviour 
+{
 
 	[SerializeField] private int vida;
 

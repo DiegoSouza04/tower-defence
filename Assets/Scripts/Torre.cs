@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torre : MonoBehaviour {
-
+public class Torre : MonoBehaviour 
+{
 	public GameObject projetilPrefab;
 	public float tempoDeRecarga = 0.5f;
 	private float momentoDoUltimoDisparo;
 	[SerializeField] private float raioDeAlcance;
 
 	// Use this for initialization
-	void Update () {
+	void Update () 
+	{
 		Inimigo alvo = EscolheAlvo ();
 		if (alvo != null) {
 			Atira (alvo);
 		}
 	}
 
-	private void Atira(Inimigo inimigo){
+	private void Atira(Inimigo inimigo)
+	{
 
 		float tempoAtual = Time.time;
 
